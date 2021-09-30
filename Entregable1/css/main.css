@@ -2,7 +2,7 @@ p {
     color: blue;
 }
 
-.header ul {
+.buttons {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,17 +10,22 @@ p {
     background-color: #333;
 }
 
-.header li {
+.buttons li {
     float: left;
     border-right: 1px solid #bbb;
 }
 
-.header li:last-child {
+.buttons li {
+    float: right;
+    border-left: 1px solid #bbb;
+}
+
+.buttons li:last-child {
     float: right;
     border-right: none;
 }
 
-.header li a {
+.buttons li a {
     display: block;
     color: white;
     text-align: center;
@@ -28,7 +33,7 @@ p {
     text-decoration: none;
 }
 
-.header li a:hover {
+.buttons li a:hover {
     background-color: #111;
 }
 
