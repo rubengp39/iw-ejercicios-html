@@ -6,37 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Deustozon</title>
+    <title>DeustoPC</title>
     <link rel="shortcut icon" href="../images/icon.png" type="image">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="nav_main">
+            <a class="nav_logo" href="index.html"><img src="" alt="DeustoPC LOGO"></a>
+            <form>
+                <input type="text" , name="search" , placeholder="Buscar">
+            </form>
             <ul class="buttons">
-                <li><a class="active" href="index.html">Deustozon</a></li>
-                <li>
-                    <form>
-                        <input type="text" , name="search" , placeholder="Buscar">
-                    </form>
-                </li>
                 <li><a href="perfil.html">Perfil</a></li>
                 <li><a href="checkout.html">CheckOut</a></li>
             </ul>
 
-            <ul>
-                <li>
-                    Eur(€)
-                </li>
-                <li>
-                    US($)
-                </li>
-                <li>
-                    Pound(₤)
-                </li>
-            </ul>
-
+            <select name="Currency" class="nav_currency">
+                <option value="1">EUR €</option>
+                <option value="2">USD $</option>
+                <option value="3">GBP £</option>
+                <option value="4">JPY ¥</option>
+            </select>
 
         </nav>
     </header>

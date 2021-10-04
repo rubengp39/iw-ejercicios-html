@@ -1,42 +1,55 @@
-p {
-    color: blue;
-}
-
-.buttons {
-    list-style-type: none;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
 }
 
-.buttons li {
-    float: left;
-    border-right: 1px solid #bbb;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: deepskyblue;
+    font-size: 16px;
 }
 
-.buttons li {
-    float: right;
-    border-left: 1px solid #bbb;
-}
-
-.buttons li:last-child {
-    float: right;
-    border-right: none;
-}
-
-.buttons li a {
-    display: block;
+a {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-.buttons li a:hover {
-    background-color: #111;
+ul {
+    list-style: none;
 }
 
-.active {
-    background-color: rgb(32, 91, 180);
+header {
+    width: 80%;
+    margin: auto;
+}
+
+.nav_main {
+    background-color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+    padding: 1%;
+}
+
+.nav_logo {
+    width: 2%;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons li {
+    padding: 5%;
+}
+
+.nav_main form {
+    padding: 0.5%;
+}
+
+.buttons li:hover {
+    border-top: 2px solid white;
 }
