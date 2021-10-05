@@ -53,3 +53,9 @@ header {
 .buttons li:hover {
     border-top: 2px solid white;
 }
+
+.sidebar {
+    width: 25%;
+    background-color: white;
+    display: block;
+}
