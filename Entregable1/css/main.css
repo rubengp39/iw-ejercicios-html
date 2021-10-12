@@ -3,24 +3,29 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
+ul{
+    list-style-type: none;
+}
+
 .navbar{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
+
 .navbar_logo{
     width: 300px;
 }
+
 .navbar_search{
     border: 2px solid #05445E;
 	overflow: auto;
 	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
     width: 500px;
+    margin-left:2%;
 }
+
 .navbar_search input[type="text"]
 {
 	border: 0px;
@@ -44,21 +49,12 @@
     cursor:pointer;
 }
 
-@media only screen and (min-width : 150px) and (max-width : 780px)
-{
-	.navbar_search{
-		width: 95%;
-		margin: 0 auto;
-    }
-}
-
 .navbar_buttons{
     flex: 1;
     text-align: right;
 }
 .navbar_buttons ul{
     display: inline-block;
-    list-style-type: none;
 }
 .navbar_buttons ul li{
     display: inline-block;
@@ -91,6 +87,7 @@ a{
 p{
     color:#05445E;
 }
+
 header{
     margin: auto;
     padding-right: 25px;
@@ -128,4 +125,101 @@ header{
     padding: 8px 20px;
     margin: 20px 0;
     border-radius: 20px;
+}
+
+.categories{
+    margin: 80px 0;
+}
+
+.container{
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.row_col_3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.row_col_3 img{
+    width: 100%;
+}
+
+.row_col_4{
+    flex-basis:25%;
+    padding: 15px;
+    min-width: 150px;
+    margin-bottom: 60px;
+}
+
+.row_col_4 img{
+    width: 100%;
+}
+
+.brands{
+    margin: 100px auto;
+}
+.row_col_5{
+    width: 150px;
+}
+
+.row_col_5 img{
+    width: 100%;
+    cursor: pointer;
+}
+
+footer{
+    background: #000;
+    color: gray;
+    font-size: 15px;
+    padding: 20px 0 15px;
+}
+
+footer p{
+    color: gray;
+}
+footer h2{
+    color: #189AB4;
+    margin-bottom: 20px;
+}
+
+.footer_col_1{
+    min-width: 250px;
+    margin-bottom: 20px;
+    flex:1;
+    text-align: left;
+    filter: brightness(0) invert(100%);
+}
+
+.footer_col_2{
+    min-width: 250px;
+    margin-bottom: 20px;
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.footer_col_3{
+    min-width: 250px;
+    margin-bottom: 20px;
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.footer hr{
+    border: none;
+    background: #75E6DA;
+}
+
+
+/*---Media <600px---*/
+@media screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .row_col_2, .row_col_3, .row_col_4{
+        flex-basis: 100%;
+    }
 }
