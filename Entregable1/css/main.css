@@ -73,6 +73,10 @@ ul{
     color: #05445E;
     border: 1px #05445E solid;
 }
+.navbar_buttons_selector:focus{
+    outline: none;
+}
+
 
 .navbar_checkout{
     width: 25px;
@@ -149,7 +153,7 @@ header{
 }
 
 .row_col_4{
-    flex-basis:25%;
+    flex-basis: 25%;
     padding: 15px;
     min-width: 150px;
     margin-bottom: 60px;
@@ -214,7 +218,7 @@ footer h2{
 }
 
 
-/*---Media <600px---*/
+/*--- Media <600px ---*/
 @media screen and (max-width: 600px){
     .row{
         text-align: center;
@@ -222,4 +226,95 @@ footer h2{
     .row_col_2, .row_col_3, .row_col_4{
         flex-basis: 100%;
     }
+}
+
+
+/*--- Productos.html ---*/
+
+.row_2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+.row_2 select{
+    border: 1px solid #05445E;
+    padding: 3px;
+}
+
+.row_2 select:focus{
+    outline: none;
+}
+
+.mas_pag{
+    margin: 0 auto 40px;
+
+}
+.mas_pag span{
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #05445E;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.mas_pag span:hover{
+    background: #05445E;
+    color: white;
+}
+
+/*--- detalles.html ---*/
+
+.main_photo{
+    width: 75%;
+}
+.product .row_col_2 {
+    padding: 30px;
+}
+
+.product .row_col_2 img{
+    padding: 0;
+}
+
+.product h3{
+    font-size: 20px;
+}
+
+.product input{
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+    padding-left: 15px;
+    margin-right: 10px;
+    border:1px solid #05445E;
+    border-radius: 5px;
+}
+
+.product input:focus{
+    outline: none;
+}
+
+.img_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_col{
+    display: flex;
+    flex-basis: 19%;
+    cursor: pointer;
+}
+
+
+/*--- checkout.html --- */
+
+.checkout{
+    margin: 100px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
 }
