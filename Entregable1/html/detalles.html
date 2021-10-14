@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Productos | BestPC</title>
-    <link rel="shortcut icon" href="../images/icon.png" type="image">
+    <link rel="shortcut icon" href="../images/icon.png">
     <link rel="stylesheet" href="../css/main.css">
-    
+
+
 </head>
 
 <body>
@@ -17,15 +18,16 @@
         <div class="navbar">
             <a href="index.html"><img src="../images/logo.png" alt="BestPC_LOGO" class="navbar_logo"></a>
             <div class="navbar_search">
-                <form class="navbar_search_form">
-                    <input type="text" placeholder="¿Qué deseas buscar?">
-                    <input type="submit" value=&#128270;>
+                <form class="navbar_search_form" method="post">
+                    <div class="navbar_search_input_container">
+                        <input type="search" placeholder="¿Qué deseas buscar?" class="navbar_search_input">
+                    </div>
                 </form>
             </div>
-            
+
             <nav class="navbar_buttons">
                 <ul>
-                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="productos.html" class="navbar_buttons_active">Productos</a></li>
                     <li><a href="">Cuenta</a></li>
                     <li><select name="currency" id="currency" class="navbar_buttons_selector">
@@ -35,9 +37,9 @@
                     </select></li>
                 </ul>
             </nav>
-            
+
             <img src="../images/checkout.png" alt="Checkout" class="navbar_checkout">
-            
+
         </div>
     </header>
 
@@ -62,30 +64,11 @@
                     <input type="number" value="1">
                     <a href="" class="row_col_2_button">Añadir al carrito</a>
                     <h2>Especificaciones técnicas</h2>
-                    <br> <hr> <br>
-                    <p>Procesador AMD Ryzen 5 3500U (4C / 8T, 2.1 / 3.7GHz, 2MB L2 / 4MB L3) <br>
-                        Memoria 1x 8GB SO-DIMM DDR4-2400 <br>
-                        Disco duro 512GB SSD M.2 2242 PCIe NVMe <br>
-                        Almacenamiento óptico NO <br>
-                        Tarjeta gráfica AMD Radeon Graphics <br>
-                        Conectividad <br>
-                        LAN 10/100/1000 <br>
-                        11ac, 2x2 + BT5.0 <br>
-                        Conexiones <br>
-                        1x headphone / microphone combo jack (3.5mm) <br>
-                        2x USB 2.0 <br>
-                        2x USB 3.2 Gen 1 <br>
-                        1x headphone (3.5mm) <br>
-                        1x VGA <br>
-                        4x USB 2.0 <br>
-                        1x Ethernet (RJ-45) <br>
-                        1x HDMI 1.4 <br>
-                        1x line-out (3.5mm) <br>
-                        Sistema operativo SIN SISTEMA OPERATIVO <br>
-                        Teclado y ratón incluido <br>
-                        Dimensiones 100 x 290 x 270 mm <br>
-                        Peso 3.55Kg <br>
-                        Color Mineral Grey <br>
+                    <br>
+                    <hr> <br>
+                    <p>Procesador AMD Ryzen 5 3500U (4C / 8T, 2.1 / 3.7GHz, 2MB L2 / 4MB L3) <br> Memoria 1x 8GB SO-DIMM DDR4-2400 <br> Disco duro 512GB SSD M.2 2242 PCIe NVMe <br> Almacenamiento óptico NO <br> Tarjeta gráfica AMD Radeon Graphics <br> Conectividad
+                        <br> LAN 10/100/1000 <br> 11ac, 2x2 + BT5.0 <br> Conexiones <br> 1x headphone / microphone combo jack (3.5mm) <br> 2x USB 2.0 <br> 2x USB 3.2 Gen 1 <br> 1x headphone (3.5mm) <br> 1x VGA <br> 4x USB 2.0 <br> 1x Ethernet (RJ-45)
+                        <br> 1x HDMI 1.4 <br> 1x line-out (3.5mm) <br> Sistema operativo SIN SISTEMA OPERATIVO <br> Teclado y ratón incluido <br> Dimensiones 100 x 290 x 270 mm <br> Peso 3.55Kg <br> Color Mineral Grey <br>
 
                     </p>
                 </div>
@@ -96,7 +79,7 @@
                 <h1>Sugerencias</h1>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="row">
                 <div class="row_col_4">
@@ -155,28 +138,11 @@
         <hr>
         <p class="copyright">Copyright© 2021 <a href="https://www.linkedin.com/in/rubén-garcía-pedrejón-846235194/" target="_blank"> Rubén García</a></p>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 
 
-<script>
-    var imgProduct = document.getElementById("imgProduct");
-    var secImg = document.getElementsByClassName("img-sec");
-    
-    secImg[0].onclick = function(){
-        imgProduct.src = secImg[0].src;
-    }
-    secImg[1].onclick = function(){
-        imgProduct.src = secImg[1].src;
-    }
-    secImg[2].onclick = function(){
-        imgProduct.src = secImg[2].src;
-    }
-    secImg[3].onclick = function(){
-        imgProduct.src = secImg[3].src;
-    }
-    secImg[4].onclick = function(){
-        imgProduct.src = secImg[4].src;
-    }
-    
-    </script>
+
+
 </html>

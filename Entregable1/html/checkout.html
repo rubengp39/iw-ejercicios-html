@@ -9,7 +9,7 @@
     <title>Productos | BestPC</title>
     <link rel="shortcut icon" href="../images/icon.png" type="image">
     <link rel="stylesheet" href="../css/main.css">
-    
+
 </head>
 
 <body>
@@ -17,15 +17,16 @@
         <div class="navbar">
             <a href="index.html"><img src="../images/logo.png" alt="BestPC_LOGO" class="navbar_logo"></a>
             <div class="navbar_search">
-                <form class="navbar_search_form">
-                    <input type="text" placeholder="¿Qué deseas buscar?">
-                    <input type="submit" value=&#128270;>
+                <form class="navbar_search_form" method="post">
+                    <div class="navbar_search_input_container">
+                        <input type="search" placeholder="¿Qué deseas buscar?" class="navbar_search_input">
+                    </div>
                 </form>
             </div>
-            
+
             <nav class="navbar_buttons">
                 <ul>
-                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="productos.html" class="navbar_buttons_active">Productos</a></li>
                     <li><a href="">Cuenta</a></li>
                     <li><select name="currency" id="currency" class="navbar_buttons_selector">
@@ -35,14 +36,14 @@
                     </select></li>
                 </ul>
             </nav>
-            
+
             <img src="../images/checkout.png" alt="Checkout" class="navbar_checkout">
-            
+
         </div>
     </header>
 
     <main>
-        
+
         <div class="container">
             <table>
                 <tr>
