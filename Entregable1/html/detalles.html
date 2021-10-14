@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BestPC</title>
+    <title>Productos | BestPC</title>
     <link rel="shortcut icon" href="../images/icon.png">
     <link rel="stylesheet" href="../css/main.css">
+
 
 </head>
 
@@ -17,7 +18,7 @@
         <div class="navbar">
             <a href="index.html"><img src="../images/logo.png" alt="BestPC_LOGO" class="navbar_logo"></a>
             <div class="navbar_search">
-                <form class="navbar_search_form">
+                <form class="navbar_search_form" method="post">
                     <div class="navbar_search_input_container">
                         <input type="search" placeholder="¿Qué deseas buscar?" class="navbar_search_input">
                     </div>
@@ -26,8 +27,8 @@
 
             <nav class="navbar_buttons">
                 <ul>
-                    <li><a href="index.html" class="navbar_buttons_active">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html" class="navbar_buttons_active">Productos</a></li>
                     <li><a href="">Cuenta</a></li>
                     <li><select name="currency" id="currency" class="navbar_buttons_selector">
                         <option value="1">EUR €</option>
@@ -40,82 +41,72 @@
             <img src="../images/checkout.png" alt="Checkout" class="navbar_checkout">
 
         </div>
-        <div class="row">
-            <div class="row_col_2">
-                <h1>¡Siempre a la última!</h1>
-                <p>Los mejores ordenadores al mejor precio. <br> Encuentra toda gama de productos. <br> Ningún cliente insatisfecho.</p>
-                <a href="" class="row_col_2_button">Descubre las novedades &#8594;</a>
-            </div>
-            <div class="row_col_2">
-                <img src="../images/ordenadores.png" alt="NewPCs">
-            </div>
-        </div>
     </header>
 
     <main>
-        <div class="categories">
-            <div class="container">
-                <div class="row">
-                    <div class="row_col_3">
-                        <img src="../images/pc1.png" alt="ordenador de sobremesa">
+        <div class="container product">
+            <div class="row">
+                <div class="row_col_2">
+                    <img src="../images/o6.png" alt="ordenador iMac" class="main_photo" id="imgProduct">
+                    <div class="img_row">
+                        <div class="img_col">
+                            <img src="../images/o6.png" alt="" class="img-sec">
+                            <img src="../images/so2.png" alt="" class="img-sec">
+                            <img src="../images/so3.png" alt="" class="img-sec">
+                            <img src="../images/so4.png" alt="" class="img-sec">
+                            <img src="../images/so5.png" alt="" class="img-sec">
+                        </div>
                     </div>
-                    <div class="row_col_3">
-                        <img src="../images/pc2.png" alt="ordenador gaming">
-                    </div>
-                    <div class="row_col_3">
-                        <img src="../images/pc3.png" alt="portatil">
-                    </div>
+                </div>
+                <div class="row_col_2">
+                    <h1>Lenovo IdeaCentre 3</h1>
+                    <h3>619,99€</h3>
+                    <input type="number" value="1">
+                    <a href="" class="row_col_2_button">Añadir al carrito</a>
+                    <h2>Especificaciones técnicas</h2>
+                    <br>
+                    <hr> <br>
+                    <p>Procesador AMD Ryzen 5 3500U (4C / 8T, 2.1 / 3.7GHz, 2MB L2 / 4MB L3) <br> Memoria 1x 8GB SO-DIMM DDR4-2400 <br> Disco duro 512GB SSD M.2 2242 PCIe NVMe <br> Almacenamiento óptico NO <br> Tarjeta gráfica AMD Radeon Graphics <br> Conectividad
+                        <br> LAN 10/100/1000 <br> 11ac, 2x2 + BT5.0 <br> Conexiones <br> 1x headphone / microphone combo jack (3.5mm) <br> 2x USB 2.0 <br> 2x USB 3.2 Gen 1 <br> 1x headphone (3.5mm) <br> 1x VGA <br> 4x USB 2.0 <br> 1x Ethernet (RJ-45)
+                        <br> 1x HDMI 1.4 <br> 1x line-out (3.5mm) <br> Sistema operativo SIN SISTEMA OPERATIVO <br> Teclado y ratón incluido <br> Dimensiones 100 x 290 x 270 mm <br> Peso 3.55Kg <br> Color Mineral Grey <br>
+
+                    </p>
                 </div>
             </div>
         </div>
         <div class="container">
-            <h2>Más Vendidos</h2>
+            <div class="row row_2">
+                <h1>Sugerencias</h1>
+            </div>
+        </div>
+
+        <div class="container">
             <div class="row">
                 <div class="row_col_4">
-                    <a href="detalles.html"><img src="../images/ordenador1.png" alt="ordenador gama baja"></a>
+                    <img src="../images/ordenador1.png" alt="ordenador gama baja">
                     <h3>Gama baja</h3>
                     <p>419,99€</p>
                 </div>
                 <div class="row_col_4">
-                    <a href="detalles.html"><img src="../images/ordenador2.png" alt="ordenador gama media"></a>
+                    <img src="../images/ordenador2.png" alt="ordenador gama media">
                     <h3>Gama media</h3>
                     <p>619,99€</p>
                 </div>
                 <div class="row_col_4">
-                    <a href="detalles.html"><img src="../images/ordenador3.png" alt="ordenador gama alta"></a>
+                    <img src="../images/ordenador3.png" alt="ordenador gama alta">
                     <h3>Gama alta</h3>
                     <p>999,99€</p>
                 </div>
                 <div class="row_col_4">
-                    <a href="detalles.html"><img src="../images/ordenador4.png" alt="ordenador iMac"></a>
+                    <img src="../images/ordenador4.png" alt="ordenador iMac">
                     <h3>iMac</h3>
                     <p>9999,99€</p>
                 </div>
             </div>
+
         </div>
 
-        <div class="brands">
-            <div class="container">
-                <h2>Marcas</h2>
-                <div class="row">
-                    <div class="row_col_5">
-                        <img src="../images/logo1.png" alt="hp logo">
-                    </div>
-                    <div class="row_col_5">
-                        <img src="../images/logo2.png" alt="apple logo">
-                    </div>
-                    <div class="row_col_5">
-                        <img src="../images/logo3.png" alt="razer logo">
-                    </div>
-                    <div class="row_col_5">
-                        <img src="../images/logo4.png" alt="dell logo">
-                    </div>
-                    <div class="row_col_5">
-                        <img src="../images/logo5.png" alt="asus logo">
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </main>
 
     <footer>
@@ -147,6 +138,11 @@
         <hr>
         <p class="copyright">Copyright© 2021 <a href="https://www.linkedin.com/in/rubén-garcía-pedrejón-846235194/" target="_blank"> Rubén García</a></p>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
+
+
+
 
 </html>
