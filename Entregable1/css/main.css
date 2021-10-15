@@ -106,6 +106,7 @@ header {
     padding-right: 25px;
     padding-left: 25px;
     background: radial-gradient(#75E6DA, #189AB4);
+
 }
 
 .row {
@@ -140,7 +141,7 @@ header {
     padding: 50px 0;
 }
 
-.row_col_2_button {
+.button {
     display: inline-block;
     background-color: #05445E;
     color: #D4F1F4;
@@ -179,6 +180,7 @@ header {
     padding: 15px;
     min-width: 150px;
     margin-bottom: 60px;
+    
 }
 
 .row_col_4 img {
@@ -328,6 +330,7 @@ footer h2 {
 .img_row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 500px;
 }
 
 .img_col {
@@ -398,4 +401,79 @@ th:last-child {
     border-top: 2px solid #05445E;
     width: 100%;
     max-width: 400px;
+}
+
+
+/*--- perfil.html ---*/
+
+.profile{
+    padding: 50px 0;
+    background:radial-gradient(#75E6DA, #189AB4);
+}
+
+
+.form_container{
+    background: #D4F1F4;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 25px 0;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.form_container span{
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form_container form{
+    padding: 25px 20px;
+    margin-left: 25px;
+    top: 80px;
+    max-width: 250px;
+    position: absolute;
+    transition: 1s;
+}
+
+.form_container form input{
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #05445E;
+}
+
+.form_container form button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.form_container form button:focus{
+    outline: none;
+}
+.form_button{
+    display: inline-block;
+}
+
+.login_form{
+    left: -300px;
+}
+
+.register_form{
+    left: 0;
+}
+
+.divider{
+    width: 45%;
+    border: none;
+    background: #05445E;
+    margin-top: 10px;
+    margin-left: 5px;
+    transform: translateX(100px);
+    height: 3px;
+    transition: 1s;
 }

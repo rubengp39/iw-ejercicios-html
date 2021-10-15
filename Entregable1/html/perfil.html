@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Productos | BestPC</title>
+    <title>Perfil | BestPC</title>
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/main.css">
 
@@ -44,80 +44,36 @@
 
     <main>
 
-        <div class="container checkout">
-            <table>
-                <tr>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Subtotal</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="checkout_info">
-                            <img src="../images/o5.png" alt="compra">
-                            <div>
-                                <p>Lenovo IdeaCentre G5 14IMB05</p>
-                                <small>
-                                    Price: 749,99€ <br>
-                                    <a href="">Remove</a>
-                                </small>
-                                
+        <div class="profile">
+            <div class="container">
+                <div class="row">
+                    <div class="row_col_2">
+                        <img src="../images/setup3.png" alt="">
+                    </div>
+                    <div class="row_col_2">
+                        <div class="form_container">
+                            <div class="form_button">
+                                <span onclick="login()"><b>Login</b></span>
+                                <span onclick="register()"><b>Register</b></span>
+                                <hr class="divider" id="divider">
                             </div>
+
+                            <form class="login_form" id="login_form">
+                                <input type="text" placeholder="Usuario">
+                                <input type="password" placeholder="Contraseña">
+                                <button type="submit" class="button">Login</button>
+                                <a href="">He olvidado mi contraseña</a>
+                            </form>
+
+                            <form class="register_form" id="register_form">
+                                <input type="text" placeholder="Usuario">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Contraseña">
+                                <button type="submit" class="button">Register</button>
+                            </form>
                         </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>749,99€</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="checkout_info">
-                            <img src="../images/o6.png" alt="compra">
-                            <div>
-                                <p>Lenovo IdeaCentre 3 07ADA05</p>
-                                <small>
-                                    Price: 619,99€ <br>
-                                    <a href="">Remove</a>
-                                </small>
-                                
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>619,99€</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="checkout_info">
-                            <img src="../images/o12.png" alt="compra">
-                            <div>
-                                <p>Razer Blade 15 Advanced Model</p>
-                                <small>
-                                    Price: 2149,99€ <br>
-                                    <a href="">Remove</a>
-                                </small>
-                                
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>2149,99€</td>
-                </tr>
-            </table>
-            <div class="price">
-                <table>
-                    <tr>
-                        <td>Subtotal</td>
-                        <td>3519,97€</td>
-                    </tr>
-                    <tr>
-                        <td>Envio</td>
-                        <td>7,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>3.527,96€</td>
-                    </tr>
-                </table>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -152,6 +108,8 @@
         <hr>
         <p class="copyright">Copyright© 2021 <a href="https://www.linkedin.com/in/rubén-garcía-pedrejón-846235194/" target="_blank"> Rubén García</a></p>
     </footer>
+
+<script src="../js/login.js"></script>
 </body>
 
 
