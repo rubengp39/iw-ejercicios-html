@@ -325,7 +325,7 @@ footer h2 {
 }
 
 
-/*--- checkout.html --- */
+/*--- checkout.html ---*/
 
 .checkout {
     margin: 100px auto;
@@ -334,4 +334,53 @@ footer h2 {
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+.checkout_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #05445E;
+    font-weight: normal;
+}
+td{
+    padding: 10px;
+}
+
+td input{
+    width: 45px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color:#189AB4;
+}
+
+td img{
+    width: 100px;
+    height: 100px;
+
+}
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.price table{
+    border-top: 2px solid #05445E;
+    width: 100%;
+    max-width: 400px;
 }
